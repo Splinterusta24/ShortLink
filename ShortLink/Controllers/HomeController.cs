@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShortLink.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,19 +13,17 @@ namespace ShortLink.Controllers
         {
             return View();
         }
-
-        public ActionResult About()
+        [HttpPost]
+        public JsonResult LinkKisalt(string uzunLink)
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            string kisaLink = GenerateShortLink.Generate();
+            Link link = new Link();
+            link.ShortLink = kisaLink;
+            link.LongLink = uzunLink;
+            link.Ekle();
+            return Json(kisaLink);
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
     }
 }
