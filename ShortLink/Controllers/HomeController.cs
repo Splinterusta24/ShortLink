@@ -22,8 +22,11 @@ namespace ShortLink.Controllers
             link.LongLink = uzunLink;
             link.Ekle();
             return Json(kisaLink);
-        }
 
+
+        }
+        //[HttpGet]
+        //public JsonResult Vgetir()
 
     }
 }

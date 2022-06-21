@@ -16,6 +16,8 @@
     </div>
     <div class="col-md-12 text-center">
         Yeni Kısa Linkiniz: <strong id="KisaLinkSonuc"></strong>
+                            <hr />
+        Mesajınız: <strong id="Mesaj"></strong>
     </div>
 </div>
 
@@ -35,12 +37,28 @@
                 dataType: "json",
                 success: function (result) {
                     console.log(result); // inspect te sonuç bildirisini görmek içindir.
-                    $("#KisaLinkSonuc").html(result);
+                    /*$("#KisaLinkSonuc").html(result);*/
+                    
                 },
                 error: function (result) {
                     alert(response.d);
                 }
             });
+            //$.ajax({
+            //    type: "GET", //POST
+            //    url: "/Home/LinkKisalt",
+            //    data: "{uzunLink:'" + uzunLink + "'}",
+            //    contentType: "application/json; charset=utf-8",
+            //    dataType: "json",
+            //    success: function (result) {
+            //        console.log(result); // inspect te sonuç bildirisini görmek içindir.
+            //        $("#KisaLinkSonuc").html(result);
+
+            //    },
+            //    error: function (result) {
+            //        alert(response.d);
+            //    }
+            //});
         }
     </script>
     

@@ -15,5 +15,6 @@ namespace ShortLink.Extensions
         {
             return kisaLink.Replace(".", "");
         }
+
     }
 }

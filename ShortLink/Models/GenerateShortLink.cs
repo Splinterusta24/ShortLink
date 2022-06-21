@@ -17,6 +17,8 @@ namespace ShortLink.Models
             shortLink = shortLink.Temizle();
             return shortLink;
         }
+       
+
 
 
     }
