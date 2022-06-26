@@ -125,6 +125,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DController.cs" />
     <Compile Include="Models\GenerateShortLink.cs" />
     <Compile Include="Models\Link.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -163,6 +164,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\D\In.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
